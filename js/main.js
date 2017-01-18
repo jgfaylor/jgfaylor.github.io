@@ -42,9 +42,52 @@ $(document).ready(function() {
                          });
         //if incomplete contains any elements, the form has not been filled 
         if(incomplete.length) {
-            alert('please fill out the form');
+            alert('Please complete all forms.');
             //to prevent submission of the form
             return false;
         }
      });
+});
+
+
+// image slider
+
+var translateX = 0;
+
+$('#next').on('click', function () {
+    if (translateX === -75) {
+        translateX = 0;
+    } else {
+        translateX -= 25;
+    }
+
+    $('.slides').css('transform', 'translateX(' + translateX + '%)');
+});
+
+setInterval(function() { 
+        if (translateX === -75) {
+            translateX = 0;
+            console.log("Resetting back to", translateX)
+        } else {
+            translateX -= 25
+            console.log(translateX)
+            $('.slides').css('transform', 'translateX(' + translateX + '%)') 
+        }
+    }, 3000);
+
+
+$('#previous').on('click', function () {
+    if (translateX === 0) {
+        translateX = -75;
+    } else {
+        translateX += 25;
+    }
+
+    $('.slides').css('transform', 'translateX(' + translateX + '%)');
+});
+
+$('.hamburger').on('click', function (event) {
+    event.preventDefault();
+    $('#dropdown').slideDown('show')
+
 });
