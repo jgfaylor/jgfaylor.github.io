@@ -24,7 +24,7 @@ $('#portimage img').on('click', function () {
 });
 
 $('.lightbox').on('click', function () {
-$('.lightbox').fadeOut(500);
+    $('.lightbox').fadeOut(500);
 });
 
 // 
@@ -38,15 +38,15 @@ $('.close-modal').on('click', function () {
 $(document).ready(function() {
     $('form').submit(function() {
         var incomplete = $('form :input').filter(function() {
-                             return $(this).val() == '';
-                         });
+           return $(this).val() == '';
+       });
         //if incomplete contains any elements, the form has not been filled 
         if(incomplete.length) {
             alert('Please complete all forms.');
             //to prevent submission of the form
             return false;
         }
-     });
+    });
 });
 
 
@@ -65,15 +65,15 @@ $('#next').on('click', function () {
 });
 
 setInterval(function() { 
-        if (translateX === -75) {
-            translateX = 0;
-            console.log("Resetting back to", translateX)
-        } else {
-            translateX -= 25
-            console.log(translateX)
-            $('.slides').css('transform', 'translateX(' + translateX + '%)') 
-        }
-    }, 3000);
+    if (translateX === -75) {
+        translateX = 0;
+        console.log("Resetting back to", translateX)
+    } else {
+        translateX -= 25
+        console.log(translateX)
+        $('.slides').css('transform', 'translateX(' + translateX + '%)') 
+    }
+}, 3000);
 
 
 $('#previous').on('click', function () {
