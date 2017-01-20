@@ -1,0 +1,391 @@
+
+/* ==========================================================================
+   Base styles:
+   ========================================================================== */
+/* Fix to include padding and border in the total width for each element */
+
+/* font-family: 'Lora', serif;
+font-family: 'Hammersmith One', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fix for responsive images */
+img {
+  
+  max-width: 100%;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+body {
+	font-family: 'Lora', serif;
+	color: #F0E3C0;
+	background-color: #3B6670;
+	padding-top: 30px;
+}
+
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+
+p {
+	font-family: 'Lora', serif;
+	text-transform: one;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 24px;
+	color: #F0E3C0;
+	padding-left: 25px;
+	z-index: 100;
+}
+
+h2 {
+	font-family: 'Playfair Display SC', serif;
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: ;
+	transition: all 1s ease-in-out;
+}
+
+.contact {
+	text-align: center;
+	font-size: 16px;
+}
+
+
+/* ----------------------------------------
+Lists
+------------------------------------------- */
+ul a {
+	text-transform: none;
+}
+
+ul {
+	padding-right: 20px;
+	padding-left: 20px;
+	list-style: none;
+	text-align: right;
+}
+
+li {
+	display: block;
+}
+
+#maintitle {
+	padding-top: 2px;
+	padding-left: 5px;
+	display: inline;
+	float: left;
+	text-align: left;
+	text-decoration: none;
+}
+
+#maintitle a {
+	color: #F0E3C0;
+}
+
+#currentpage {
+	color: #FF3333;
+	font-weight: bold;
+}
+
+/* ----------------------------------------
+Layout
+------------------------------------------- */
+
+hr {
+	height: 4px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+    width: 30%;
+}
+
+#leadimage {
+	width: 800px;
+	display: block;
+	margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+#portimage img {
+	width: 250px;
+	display: block;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+#aboutimage {
+	width: 450px;
+	display: block;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+article {
+	margin: 80px 150px;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.masonry img {
+	width: 200px;
+	height: 150px;
+	margin: 20px 20px;
+}
+
+input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    color: #3B6670;
+}
+
+#feedback {
+	width: 350px;
+	height: 150px;
+	display: block;
+}
+
+.lightbox {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+	color: white;
+	justify-content: center;
+}
+
+.lightbox img {
+	max-width: 800px;
+	align-self: center;
+}
+
+.close {
+	position: absolute;
+	top: 150px;
+	right: 40px;
+}
+
+// .show-modal {
+//   visibility: visible;
+//   opacity: 1;
+//   filter: alpha(opacity=100);
+// }
+
+.trigger {
+
+}
+
+.modal {
+	background-color: white;
+	border-radius: 4px;
+	width: 800px;
+  padding: 50px 25px;
+  position: fixed;
+}
+
+form {
+	text-align: center;
+}
+
+footer button {
+    background: #FF8500;
+    color: #fff;
+}
+
+form button {
+
+}
+
+button {
+	outline: 0;
+    border: none;
+    padding: 8px 15px 8px 15px;
+
+    box-shadow: 1px 1px 4px #DADADA;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin: 30px;
+}
+
+textarea {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+    margin: 0 auto;
+    color: #3B6670;
+}
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+header {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #0D1F30;
+	z-index: 90;
+	margin-bottom: 10px;
+}
+
+nav li {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+nav a {
+	font-weight: 600;
+	letter-spacing: 0.75px;
+	padding: 3px 10px;
+	display: inline-block;
+	border-bottom: none;
+	text-align: right;
+	color: #8BADA3;
+}
+
+nav a:hover {
+	color: #DB6C0F;
+}
+
+.hamburger {
+	display: none;
+}
+
+/* ----------------------------------------
+Slider
+------------------------------------------- */
+
+.carousel-wrapper {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto 30px;
+	overflow: hidden;
+}
+
+.slides {
+	transition: all .3s ease-in-out;
+	display: flex;
+	width: 400%;
+}
+
+.slides img {
+	margin-top: 60px;
+}
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+footer {
+	background-color: #0D1F30;
+	overflow: auto;
+	text-align: center;
+}
+
+i {
+	color: #F0E3C0;
+	padding: 30px 15px 20px 15px;
+	transition: all 1s ease-in-out;
+}
+
+i:hover {
+	color: #FF3333;
+}
+
+.contact {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 21px;
+	font-size: 17px;
+}
+
+/* ----------------------------------------
+Responsive
+------------------------------------------- */
+
+@media only screen and (max-width: 450px) {
+
+	.hamburger {
+		display: block;
+		text-align: right;
+		padding: 1rem;
+		font-size: 2rem;
+	}
+
+	nav li {
+		display: none;
+	}
+
+#maintitle {
+	width: 100%;
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+.carousel-wrapper {
+	width: 400%;
+	max-width: 450px;
+	margin-top: 20px;
+
+}
+
+.slides img {
+	width: 450px;
+	height: 350px;
+	margin-top: 180px;
+}
+
+article {
+	margin: 20px 30px;
+}
